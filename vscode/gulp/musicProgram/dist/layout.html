@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        function setRem(){
+            var html = document.documentElement;
+            var width = html.getBoundingClientRect().width;
+            var fontsize = width/15;//默认750
+            html.style.fontSize = fontsize + 'px';
+            console.log(html.style.fontSize);
+        }
+        setRem();
+    
+        window.addEventListener('orientationchange',function(){
+            setTimeout(() => {
+                setRem();
+            }, 600);
+        },false);
+    </script>
+    <link rel="stylesheet" href="./css/common.css">
+     <title></title>
+     
+ </head>
+ <body>
+   <header></header>
+     
+ </body>
+ </html>
+ 

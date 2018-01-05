@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 动态设置rem
+        function setRem(){
+            
+            var html = document.documentElement;
+            var width = html.getBoundingClientRect().width;
+            var fontSize = width / 30;//默认是1080
+            html.style.fontSize = fontSize+'px';//36px,需要注意的是chrome最小的字体是12px
+        }
+
+        setRem();
+        // 当切换屏幕方向的时候，重置
+        // 小心浏览器在切换屏幕方向有个500毫秒延迟
+        window.addEventListener('orientationchange',function(){
+            setTimeout(function() {
+                setRem();
+            }, 600);
+        },false);
+    </script>
+    <title> index </title>
+    
+<link rel="stylesheet" href="css/css/reset.css">
+<link rel="stylesheet" href="css/css/font.css">
+<link rel="stylesheet" href="css/css/index.css">
+<link rel="stylesheet" href="css/components/header/header.css">
+<link rel="stylesheet" href="css/components/footer/footer.css"> 
+</head>
+<body>
+  
+    
+<div class="wrap">
+    <!-- 头部组件 -->
+    <header>
+   <div class="search">
+       <span>搜索商品</span>
+   </div>
+   <div class="address"><img src="./imgs/address.png" alt=""><span>选择配送点</span></div>
+</header>
+    <section class="content">
+        <nav>
+            <a href="#" goodid='z' class="icon-stars">活动专区</a>
+            <div class="icon-sort">分类导航</div>
+            <a href="#b" goodid='a'>蔬菜水果</a>
+            <a href="#b" goodid='b'>肉类禽蛋</a>
+            <a href="#c" goodid='c'>乳品面点</a>
+            <a href="#d" goodid='d'>海鲜水产</a>
+            <a href="#e" goodid='e'>零食冲饮</a>
+            <a href="#f" goodid='f'>粮油副食</a>
+            <a href="#g" goodid='g'>干货</a>
+            <a href="#h" goodid='h'>礼包</a>
+            <a href="#i" goodid='i'>乳品面点</a>
+            <a href="#j" goodid='j'>海鲜水产</a>
+            <a href="#k" goodid='k'>零食冲饮</a>
+        </nav>
+        <div class="goods">
+            <ul>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="good_img">
+                            <img src="./imgs/img1.jpg" alt="">
+                        </div>
+                        <div class="good_des">
+                            <span>家乐都有机里脊肉500g</span>
+                            <span style="color:#ff9f00">瘦肉多</span>
+                            <span style="color:red">￥150</span>
+                            <span style="color:#808080;font-size: .972222rem">乐果派旗舰店</span>
+
+                        </div>
+                    </a>
+
+                    <!-- <button class="cart_icon icon-cartadd">
+                        <span class="list-cart"></span>
+                    </button> -->
+                    <div class='cart_change'>
+                        <button class="icon-reduce">
+                        </button>
+                        <input type="text" value="1">
+                        <button class="icon-plus">
+
+                        </button>
+                    </div>
+
+                    <!-- //内容介绍页面 -->
+                    <div class="introduce" style="display:none">
+                        <div class="goodheader">
+                            <button class="close">
+                                <span>
+                                    <i class="icon-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="goodcontent">
+                            <div class="goodslider">
+                                <img src="./imgs/pro01.jpg" alt="">
+                            </div>
+                            <div class="detail-intro">
+                                <span>天然牧草养殖冷鲜 内蒙古呼伦贝尔优质牛后腿肉1000g</span>
+                                <font>365天纯生态放养 肉质细腻紧实 品质高</font>
+                            </div>
+                            <div class="detail-content">
+                                <img src="./imgs/Pic02.jpg" alt="">
+                                <img src="./imgs/Pic03.jpg" alt="">
+                                <img src="./imgs/Pic04.jpg" alt="">
+                                <img src="./imgs/Pic05.jpg" alt="">
+                                <img src="./imgs/Pic06.jpg" alt="">
+                                <img src="./imgs/Pic07.jpg" alt="">
+                                <img src="./imgs/Pic08.jpg" alt="">
+                                <img src="./imgs/Pic09.jpg" alt="">
+                                <img src="./imgs/Pic10.jpg" alt="">
+                                <img src="./imgs/Pic11.jpg" alt="">
+                                <img src="./imgs/Pic12.jpg" alt="">
+                                <img src="./imgs/Pic13.jpg" alt="">
+                                <img src="./imgs/Pic14.jpg" alt="">
+                                <img src="./imgs/Pic15.jpg" alt="">
+                                <img src="./imgs/Pic16.jpg" alt="">
+                                <img src="./imgs/Pic17.jpg" alt="">
+                                <img src="./imgs/Pic18.jpg" alt="">
+                                <img src="./imgs/Pic19.jpg" alt="">
+                                <img src="./imgs/Pic20.jpg" alt="">
+                                <img src="./imgs/Pic21.jpg" alt="">
+                                <img src="./imgs/Pic22.jpg" alt="">
+                                <img src="./imgs/Pic23.jpg" alt="">
+                                <img src="./imgs/Pic24.jpg" alt="">
+                                <img src="./imgs/Pic25.jpg" alt="">
+                                <img src="./imgs/Pic26.jpg" alt="">
+                                <img src="./imgs/Pic27.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="goodfooter"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="shopcartlist">
+            <div class="listheader">
+                <button class="close">
+                    <span>
+                        <i class="icon-plus"></i>
+                    </span>
+                </button>
+                <button class="clearlist">
+                    <span class="icon-delete">清空</span>
+                </button>
+            </div>
+
+            <div class="listcontent">
+                <ul>
+                    <!-- <li>
+                        <div class="listgood">
+                            <img src="./imgs/img1.jpg" alt="">
+                        </div>
+                        <div class="listgood_des">
+                            <span style="color:#515151">家乐都有机里脊肉500g</span>
+                            <span style="color:red">￥150</span>
+                        </div>
+                        <div class='cart_change'>
+                            <button class="icon-reduce">
+                            </button>
+                            <input type="text" value="1">
+                            <button class="icon-plus">
+                            </button>
+                        </div>
+                    </li> -->
+                   
+                </ul>
+            </div>
+            <div class="listfooter">
+                共计:<span>99999</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+   <a href="tel:1111111"><i class="icon-tel"></i><span>电话</span></a>
+   <a href="#"><i class="icon-allorders"></i><span>订单</span></a>
+   <a href="#"><i class="icon-cart"></i><span class="good-count">0</span> <span>购物车</span></a>
+   <a href="#"><i class="icon-head"></i><span>我的</span></a>
+   <a href="#"><span>去结算</span></a>
+</footer>
+
+</div>
+<script src="./js/js/index.js"></script> 
+
+
+</body>
+</html>

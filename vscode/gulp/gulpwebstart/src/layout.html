@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 动态设置rem
+        function setRem(){
+            
+            var html = document.documentElement;
+            var width = html.getBoundingClientRect().width;
+            var fontSize = width / 30;//默认是1080
+            html.style.fontSize = fontSize+'px';//36px,需要注意的是chrome最小的字体是12px
+        }
+
+        setRem();
+        // 当切换屏幕方向的时候，重置
+        // 小心浏览器在切换屏幕方向有个500毫秒延迟
+        window.addEventListener('orientationchange',function(){
+            setTimeout(function() {
+                setRem();
+            }, 600);
+        },false);
+    </script>
+    <title>{% block title %}{% endblock  %}</title>
+    {% block head %}{% endblock  %}
+</head>
+<body>
+  
+    {% block content %}{% endblock %}
+</body>
+</html>

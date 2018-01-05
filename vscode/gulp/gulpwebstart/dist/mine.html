@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // 动态设置rem
+        function setRem(){
+            
+            var html = document.documentElement;
+            var width = html.getBoundingClientRect().width;
+            var fontSize = width / 30;//默认是1080
+            html.style.fontSize = fontSize+'px';//36px,需要注意的是chrome最小的字体是12px
+        }
+
+        setRem();
+        // 当切换屏幕方向的时候，重置
+        // 小心浏览器在切换屏幕方向有个500毫秒延迟
+        window.addEventListener('orientationchange',function(){
+            setTimeout(function() {
+                setRem();
+            }, 600);
+        },false);
+    </script>
+    <title> order</title>
+    
+<link rel="stylesheet" href="css/css/reset.css">
+<link rel="stylesheet" href="css/css/font.css">
+<link rel="stylesheet" href="css/css/mine.css"> 
+</head>
+<body>
+  
+    
+<div class="mem_header">
+    <button>
+        <span>&lt</span>
+    </button>
+    <div class="mem_inform">
+        <span id="memname"> 卢帅帅</span>
+        <img src="./imgs/memberimg.jpeg" alt="">
+    </div>
+    <div class="good_status">
+        <ul>
+            <li>
+                <h1>1</h1>
+                <span>待付款</span>
+            </li>
+            <li>
+                <h1>2</h1>
+                <span>待发货</span>
+            </li>
+            <li>
+                <h1>3</h1>
+                <span>待收货</span>
+            </li>
+            <li>
+                <h1>4</h1>
+                <span>已完成</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="member-list">
+    <ul>
+        <li>
+            <span class="icon-allorders"></span>
+            <span>我的订单</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span class="icon-head" style="background:#78c322"></span>
+            <span>我的资料</span>
+        </li>
+        <li>
+            <span class="icon-pwd" style="background:#f69465"></span>
+            <span>修改密码</span>
+        </li>
+        <li>
+            <span class="icon-coupons" style="background:#ff7fa5"></span>
+            <span>优惠券</span>
+        </li>
+        <li>
+            <span class="icon-address" style="background:#2bb5d9"></span>
+            <span>收货地址</span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <span class="icon-out" style="background:#405e90"></span>
+            <span>退出</span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

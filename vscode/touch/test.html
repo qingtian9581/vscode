@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            
+        }
+
+        ul {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+           <li>igeek1</li>
+           <li>igeek2</li>
+           <li>igeek3</li>
+           <li>igeek4</li>
+           <li>igeek5</li>
+           <li>igeek6</li>
+           <li>igeek7</li>
+           <li>igeek8</li>
+           <li>igeek9</li>
+           <li>igeek10</li>
+           <li>igeek11</li>
+           <li>igeek12</li>
+           <li>igeek13</li>
+           <li>igeek14</li>
+           <li>igeek15</li>
+           <li>igeek16</li>
+           <li>igeek17</li>
+           <li>igeek18</li>
+           <li>igeek19</li>
+           <li>igeek20</li>
+           <li>igeek21</li>
+           <li>igeek22</li>
+           <li>igeek23</li>
+           <li>igeek24</li>
+           <li>igeek25</li>
+           <li>igeek26</li>
+           <li>igeek27</li>
+           <li>igeek28</li>
+           <li>igeek29</li>
+           <li>igeek30</li>
+           <li>igeek31</li>
+           <li>igeek32</li>
+           <li>igeek33</li>
+           <li>igeek34</li>
+           <li>igeek35</li>
+           <li>igeek36</li>
+           <li>igeek37</li>
+           <li>igeek38</li>
+           <li>igeek39</li>
+           <li>igeek40</li>
+           <li>igeek41</li>
+           <li>igeek42</li>
+           <li>igeek43</li>
+           <li>igeek44</li>
+           <li>igeek45</li>
+           <li>igeek46</li>
+           <li>igeek47</li>
+           <li>igeek48</li>
+           <li>igeek49</li>
+           <li>igeek50</li>
+           <li>igeek51</li>
+           <li>igeek52</li>
+           <li>igeek53</li>
+           <li>igeek54</li>
+           <li>igeek55</li>
+           <li>igeek56</li>
+           <li>igeek57</li>
+           <li>igeek58</li>
+           <li>igeek59</li>
+           <li>igeek60</li>
+           <li>igeek61</li>
+           <li>igeek62</li>
+           <li>igeek63</li>
+           <li>igeek64</li>
+           <li>igeek65</li>
+           <li>igeek66</li>
+           <li>igeek67</li>
+           <li>igeek68</li>
+           <li>igeek69</li>
+           <li>igeek70</li>
+        </ul>
+    </div>
+    <script>
+        var ul = document.querySelector('ul');
+        var istart = 0, inow = 0, idis = 0, ioffsettop = 0;
+         console.log(document.body);
+         console.log(ul.offsetHeight)
+       var a = document.documentElement.clientHeight;
+        ul.addEventListener('touchstart', function (e) {
+            istart = e.touches[0].clientY;
+            ioffsettop = ul.offsetTop;
+            
+        }, false);
+        ul.addEventListener('touchmove', function (e) {
+            inow = e.touches[0].clientY;
+            idis = inow - istart;
+            var target = ioffsettop + idis;
+
+            if (target > 0) {
+                target = 0;
+            }
+            else if(target<a-ul.offsetHeight){
+
+                   target = a-ul.offsetHeight;
+               }
+            ul.style.top = target + 'px';
+        }, false)
+
+    </script>
+</body>
+
+</html>

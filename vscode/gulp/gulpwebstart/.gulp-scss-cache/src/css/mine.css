@@ -1,0 +1,82 @@
+.mem_header {
+  width: 100%;
+  height: 20rem;
+  background: url(../../imgs/member1.jpg) repeat;
+  background-size: 100% 20rem; }
+  .mem_header button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.777778rem;
+    width: 2.777778rem;
+    border-radius: 50%;
+    font-size: 2.222222rem;
+    line-height: 2.777778rem;
+    color: white;
+    background-color: #cccccc;
+    border: 2px solid white;
+    margin: .694444rem; }
+    .mem_header button span {
+      position: absolute;
+      top: -.277778rem;
+      left: .416667rem; }
+  .mem_header .mem_inform {
+    margin-top: 1.388889rem; }
+    .mem_header .mem_inform span {
+      margin: 1.111111rem;
+      font-size: 1.666667rem;
+      color: #4a4a4a; }
+    .mem_header .mem_inform img {
+      height: 9.722222rem;
+      width: 9.722222rem;
+      border-radius: 50%;
+      border: 2px solid white; }
+  .mem_header .good_status {
+    width: 100%;
+    height: 4.166667rem;
+    margin-top: 1.111111rem; }
+    .mem_header .good_status ul {
+      width: 100%;
+      height: 100%;
+      display: flex; }
+      .mem_header .good_status ul li {
+        flex: 1;
+        color: white; }
+        .mem_header .good_status ul li h1 {
+          font-size: 1.111111rem;
+          margin: 0; }
+
+.member-list {
+  background: #f0f0f0; }
+  .member-list ul {
+    margin-top: .833333rem;
+    background-color: white;
+    width: 100%;
+    list-style: none; }
+    .member-list ul li {
+      border-top: 1px  solid #e1e1e1;
+      border-bottom: 1px  solid #e1e1e1;
+      font-size: 1.388889rem;
+      color: #616161;
+      width: 100%;
+      height: 4.166667rem; }
+      .member-list ul li span:nth-of-type(1) {
+        margin: .694444rem;
+        float: left;
+        width: 2.777778rem;
+        height: 2.777778rem;
+        border-radius: 20%;
+        font-size: 1.944444rem;
+        color: white;
+        background-color: #51bdbd;
+        vertical-align: 2.777778rem; }
+      .member-list ul li span:nth-of-type(2) {
+        margin-left: 3.833333rem;
+        color: #787878;
+        width: 5.444444rem;
+        height: 100%;
+        font-size: 1.25rem;
+        line-height: 4.166667rem;
+        text-align: left; }
+
+/*# sourceMappingURL=mine.css.map */

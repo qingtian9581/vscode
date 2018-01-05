@@ -1,0 +1,96 @@
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; }
+
+body {
+  background-color: #f0f0f0; }
+
+.orderheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4.166667rem;
+  width: 100%;
+  background-color: #0db09d;
+  color: white;
+  z-index: 3; }
+  .orderheader span:nth-of-type(1) {
+    position: absolute;
+    left: 1.388889rem;
+    top: 0.411111rem;
+    font-size: 2.222222rem; }
+  .orderheader span:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    font-size: 1.666667rem;
+    line-height: 4.166667rem; }
+
+section {
+  width: 100%;
+  margin-top: 4.166667rem; }
+  section nav {
+    background-color: white;
+    position: fixed;
+    top: 4.166667rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    height: 4.166667rem; }
+    section nav a {
+      flex: 1;
+      color: #666666;
+      line-height: 4.166667rem;
+      font-size: 1.25rem;
+      color: #666666; }
+    section nav div {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 6px;
+      background-color: #fba500;
+      width: 4.305556rem; }
+  section ul {
+    margin-top: 9.6rem; }
+    section ul li {
+      margin-top: 1.388889rem;
+      height: 13.611111rem;
+      width: 100%;
+      background-color: white;
+      padding: .555556rem; }
+      section ul li .order-header {
+        height: 2.777778rem;
+        width: 100%;
+        font-size: 1.111111rem;
+        color: #505050;
+        text-align: left; }
+        section ul li .order-header span {
+          display: inline-block; }
+        section ul li .order-header .order-num {
+          text-align: left; }
+      section ul li .order-goodimgs {
+        height: 7.777778rem;
+        overflow-x: auto;
+        width: 100%; }
+        section ul li .order-goodimgs .box {
+          width: 200%;
+          overflow-x: hidden; }
+          section ul li .order-goodimgs .box img {
+            height: 5.555556rem;
+            width: 7.222222rem;
+            float: left;
+            margin: .277778rem; }
+      section ul li .order-footer {
+        text-align: left; }
+        section ul li .order-footer span {
+          display: inline-block; }
+        section ul li .order-footer .order-goodcount {
+          font-size: 1.111111rem;
+          color: #474747; }
+        section ul li .order-footer button {
+          width: 5.555556rem;
+          height: 2.222222rem;
+          background-color: #f3f3f3; }
+          section ul li .order-footer button:nth-of-type(1) {
+            float: right; }
+          section ul li .order-footer button:nth-of-type(2) {
+            float: right; }

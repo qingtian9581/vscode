@@ -1,0 +1,79 @@
+{% extends './layout.html' %} {% block title %} order{% endblock %} {% block head %}
+<link rel="stylesheet" href="css/css/reset.css">
+<link rel="stylesheet" href="css/css/font.css">
+<link rel="stylesheet" href="css/css/order.css"> {% endblock %} {% block content %}
+<header class="orderheader">
+    <span>&lt</span>
+    <span>我的订单</span>
+</header>
+<section>
+    <nav>
+        <a href="#">全部</a>
+        <a href="#" orderid = "order1">待付款</a>
+        <a href="#" orderid = "order2">待发货</a>
+        <a href="#">待收货</a>
+        <a href="#">已完成</a>
+        <div class="orderselect"></div>
+    </nav>
+    <ul id="order1" style="display:none">
+        <li>
+            <div class="order-ifm">
+                <div class="order-header">
+                    <span class="order-num">订单编号：111111</span>
+                    <span class="order-status" style="color:red">(待付款)</span>
+                </div>
+                <div class="order-goodimgs">
+                    <div class='box'>
+                        <img src="./imgs/img7.jpg" alt="">
+                        <img src="./imgs/img8.jpg" alt="">
+                        <img src="./imgs/img9.jpg" alt="">
+                        <img src="./imgs/img10.jpg" alt="">
+                        <img src="./imgs/img11.jpg" alt="">
+                        <img src="./imgs/img12.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="order-footer">
+                    <span class="order-goodcount">共
+                        <span style="color:red">9</span>件，总价:
+                        <span style="color:red">￥117</span>
+                    </span>
+                    <button>取消订单</button>
+                    <button>去支付</button>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <ul id="order2" style="display:none">
+            <li>
+                <div class="order-ifm">
+                    <div class="order-header">
+                        <span class="order-num">订单编号：111111</span>
+                        <span class="order-status" style="color:red">(待付款)</span>
+                    </div>
+                    <div class="order-goodimgs">
+                        <div class='box'>
+                            <img src="./imgs/img10.jpg" alt="">
+                            <img src="./imgs/img13.jpg" alt="">
+                            <img src="./imgs/img9.jpg" alt="">
+                            <img src="./imgs/img5.jpg" alt="">
+                            <img src="./imgs/img4.jpg" alt="">
+                            <img src="./imgs/img7.jpg" alt="">
+                        </div>
+    
+                    </div>
+                    <div class="order-footer">
+                        <span class="order-goodcount">共
+                            <span style="color:red">9</span>件，总价:
+                            <span style="color:red">￥117</span>
+                        </span>
+                        <button>取消订单</button>
+                        <button>去支付</button>
+                    </div>
+                </div>
+            </li>
+    
+        </ul>
+</section>
+<script src="./js/js/order.js"></script> {% endblock %}

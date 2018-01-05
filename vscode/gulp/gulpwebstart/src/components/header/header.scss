@@ -1,0 +1,44 @@
+header {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    height: 4.166667rem;
+    width: 100%;
+    background: #0bae9b url(../../../imgs/logo.png) no-repeat 1.666667rem 1.25rem;  
+    background-size: 5.555556rem 1.388889rem;
+    padding: .583333rem  0 .666667rem 8.333333rem;
+    .search {
+        float: left;
+        height: 2.916667rem;
+        width: 16.666667rem;
+        border-radius: 1.388889rem;
+        background: #0a9d8c url(../../../imgs/search.png) no-repeat 5.416667rem .638889rem ;
+        background-size: 1.777778rem 1.777778rem;
+        span{
+            width: 5.555556rem;
+            position: relative;
+            left: 8.055556rem;
+            font-size: 1.388889rem;
+            color: #85cfc6;
+            line-height: 2.916667rem;
+            vertical-align: middle;
+        }   
+    }
+    .address{
+       float: right;
+       width: 4.972222rem;
+       height: 2.944444rem;
+       img{
+           display: block;
+           margin: 0 auto;
+           width: 1.555556rem;
+           height: 1.638889rem;
+       }
+       span{
+           font-size: .416667rem;
+           color: white;
+           font-weight: lighter;
+       }
+   }
+}
